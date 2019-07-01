@@ -22,6 +22,8 @@ class CreateSchoolsTable extends Migration
             $table->string('dailyJourney');
             $table->string('elementarySchool');
             $table->string('highSchool');
+            $table->string('decree');
+            $table->string('decree_observation')->nullable();
             $table->string('fundationYear');
             $table->string('transitionYear');
             $table->timestamps();

@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\School;
 
-class DatabaseSeeder extends Seeder
+class SchoolTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,9 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-            UsersTableSeeder::class,
-            SchoolTableSeeder::class
-        ]);
+        factory(School::class, 10)->create();
     }
 }

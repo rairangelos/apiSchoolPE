@@ -14,6 +14,8 @@ class School extends Model
         'dailyJourney',
         'elementarySchool',
         'highSchool',
+        'decree',
+        'decree_observation',
         'fundationYear',
         'transitionYear'
         ];
